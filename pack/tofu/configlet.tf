@@ -5,7 +5,7 @@
 resource "apstra_datacenter_configlet" "a" {
   name = var.name
   blueprint_id =  var.blueprint_id
-  condition = "role in [ \"leaf\", \"access\"]"
+  condition = "role in [\"leaf\", \"access\"]"
   generators = [
     {
       config_style  = "junos"
